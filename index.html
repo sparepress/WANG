@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>李强的个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 1em;
+            background-color: #333;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .container {
+            padding: 2em;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .profile h1 {
+            margin: 0.5em 0 0.2em;
+        }
+        .profile p {
+            margin: 0.2em 0;
+            color: #666;
+        }
+        .section {
+            margin: 2em 0;
+        }
+        .section h2 {
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 0.3em;
+        }
+        .contact-form, .blog, .social-links {
+            margin-top: 1em;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 0.5em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            padding: 0.7em 1.5em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>李强的个人网页</h1>
+    </header>
+    <nav>
+        <a href="#profile">个人简介</a>
+        <a href="#experience">工作经历</a>
+        <a href="#contact">联系我</a>
+        <a href="#blog">博客</a>
+    </nav>
+    <div class="container">
+        <section id="profile" class="section profile">
+            <img src="profile.jpg" alt="李强">
+            <h1>李强</h1>
+            <p>职业：政治家</p>
+            <p>李强（1959年7月—），汉族，浙江瑞安人，中国共产党和中华人民共和国政治人物，现任正国级党和国家领导人，毕业于浙江农业大学宁波分校（今浙江万里学院），拥有中共中央党校研究生学历和香港理工大学工商管理硕士学位。现任中共中央政治局常委，中华人民共和国国务院总理、党组书记。</p>
+        </section>
+        <section id="experience" class="section">
+            <h2>工作经历</h2>
+            <p>李强曾任浙江省人民政府省长，中共江苏省委书记、省人大常委会主任，中共上海市委书记等职务，其主政履历遍及了苏、浙、沪三省市。在地方工作期间，李强也被认为是浙江新一轮政府改革的主要设计者和推动者，其主导创立的浙江政务服务网成为了全国“互联网+政务服务”样本。</p>
+            <p>习近平在浙江省担任主要领导期间，李强曾担任中共温州市委书记及浙江省委秘书长等职务，与习近平长期密切共事，也因此被外界视为习近平“之江新军”的主要人物。习近平在2012年当选中共中央总书记成为最高领导人后，李强的职务得以迅速晋升，于中共十九大时进入中共中央政治局，更于中共二十大后成为排名第二位的中共中央政治局常委，并在隔年政府换届时接替李克强出任国务院总理，成为中国继首任总理周恩来之后首位未曾担任过国务院副总理的总理，也是首位没有中央任职经验的总理。</p>
+        </section>
+        <section id="contact" class="section contact-form">
+            <h2>联系我</h2>
+            <form action="mailto:187925@126.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="姓名">
+                <input type="email" name="email" placeholder="电子邮件">
+                <textarea name="message" placeholder="留言"></textarea>
+                <button type="submit">发送</button>
+            </form>
+        </section>
+        <section id="blog" class="section blog">
+            <h2>博客</h2>
+            <p>即将推出...</p>
+        </section>
+        <section id="social" class="section social-links">
+            <h2>社交媒体</h2>
+            <a href="#" target="_blank">微信</a>
+            <a href="#" target="_blank">微博</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 李强. 保留所有权利。</p>
+    </footer>
+</body>
+</html>
